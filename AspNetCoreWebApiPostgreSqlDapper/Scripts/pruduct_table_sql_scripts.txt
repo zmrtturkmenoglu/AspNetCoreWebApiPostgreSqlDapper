@@ -1,0 +1,8 @@
+﻿create table product(
+Id serial primary key,
+Name varchar(200) unique not null,
+Description varchar(200) unique not null,
+Price smallint not null,
+CategoryId varchar(50) not null,
+CreatedDate timestamp not null default CURRENT_TIMESTAMP
+)
